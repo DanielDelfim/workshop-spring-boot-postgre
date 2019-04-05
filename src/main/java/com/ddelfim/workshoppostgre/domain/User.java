@@ -1,4 +1,4 @@
-package com.DanielDelfim.workshoppostgre.domain;
+package com.ddelfim.workshoppostgre.domain;
 
 import java.io.Serializable;
 

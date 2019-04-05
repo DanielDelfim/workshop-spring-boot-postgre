@@ -1,4 +1,4 @@
-package com.DanielDelfim.workshoppostgre;
+package com.ddelfim.workshoppostgre;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

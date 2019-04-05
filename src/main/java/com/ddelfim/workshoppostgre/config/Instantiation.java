@@ -1,4 +1,4 @@
-package com.DanielDelfim.workshoppostgre.config;
+package com.ddelfim.workshoppostgre.config;
 
 
 import java.util.Arrays;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
-import com.DanielDelfim.workshoppostgre.domain.User;
-import com.DanielDelfim.workshoppostgre.repository.UserRepository;
+import com.ddelfim.workshoppostgre.domain.User;
+import com.ddelfim.workshoppostgre.repository.UserRepository;
 
 @Configuration
 public class Instantiation implements CommandLineRunner{

@@ -1,8 +1,8 @@
-package com.DanielDelfim.workshoppostgre.dto;
+package com.ddelfim.workshoppostgre.dto;
 
 import java.io.Serializable;
 
-import com.DanielDelfim.workshoppostgre.domain.User;
+import com.ddelfim.workshoppostgre.domain.User;
 
 public class UserDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
