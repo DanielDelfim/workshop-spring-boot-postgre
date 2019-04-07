@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.ddelfim.workshoppostgre.domain.Post;
 import com.ddelfim.workshoppostgre.domain.User;
+import com.ddelfim.workshoppostgre.dto.AuthorDTO;
 import com.ddelfim.workshoppostgre.repository.PostRepository;
 import com.ddelfim.workshoppostgre.repository.UserRepository;
 
@@ -37,10 +38,12 @@ public class Instantiation implements CommandLineRunner{
 		User bob = new User(null, "bob", "bob@gmail.com");
 		User daniel = new User(null, "daniel", "daniel@gmail.com");
 				
-		Post post1 = new Post(null, sdf.parse("21/03/2018"), "Partiu Viagem", "Vou viajar para São Paulo. Abraços", maria);
-		Post post2 = new Post(null, sdf.parse("23/03/2018"), "Bom dia", "Acordei feliz hoje!", maria);
-		
 		userRepository.saveAll(Arrays.asList(maria, alex, bob, daniel));
+		
+		Post post1 = new Post(null, sdf.parse("21/03/2018"), "Partiu Viagem", "Vou viajar para São Paulo. Abraços", new AuthorDTO(maria));
+		Post post2 = new Post(null, sdf.parse("23/03/2018"), "Bom dia", "Acordei feliz hoje!", new AuthorDTO(maria));
+		
+		
 		postRepository.saveAll(Arrays.asList(post1, post2));
 		
 	}
